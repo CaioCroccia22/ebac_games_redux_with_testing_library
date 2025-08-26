@@ -4,7 +4,9 @@ import Produtos from './containers/Produtos'
 
 import { GlobalStyle } from './styles'
 import { Provider } from 'react-redux'
-import { store } from './store/index'
+import { ConfiguraStore } from './store/index'
+
+const store = ConfiguraStore()
 
 export type Game = {
   id: number
