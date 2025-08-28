@@ -1,10 +1,9 @@
-import { Game } from '../App'
-import Produto from '../components/Produto'
-import { useGetJogosQuery } from '../services/api'
+import Produto from '../../components/Produto'
+import { useGetJogosQuery } from '../../services/api'
 
 import * as S from './styles'
 
-const Produtos = () => {
+export const Produtos = () => {
   // data e loading são recursos do toolKit reduz query
   // no data temos a resposta da API, sendo ele renomeado para jogos
   const { data: jogos, isLoading } = useGetJogosQuery()
